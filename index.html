@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Proyecto Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="./imagen/logoAlura.png" alt="Logo de Alura Latam" class="logo">
+    </header>
+    <main>
+        <div>
+            <textarea class="text_area" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Sólo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn_encriptar" onclick="btnEncriptar()">Encriptar</button>     
+                <button class="btn_desencriptar" onclick="btnDesencriptar()">Desencriptar</button> 
+            </div>
+        </div>
+        <div class = "area_salida">
+            <div class = "imagen_alusiva">
+                <img src="./imagen/MuñecoAlura.png" alt="Imagen alusiva a muñeco" class="area_muñeco"> 
+                <p class="alerta_1"> Ningún mensaje fue encontrado </p>
+                <p class="alerta_2"> Ingresa el texto que deseas encriptar o desencriptar </p>
+            </div>
+            <textarea class="mensaje"></textarea>
+            <button class="btn_copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p class="derechos"> &copy; Copyright 2024 - Desarrollado por Luis Javier Montoya Ruiz - Todos los derechos reservados. </p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
